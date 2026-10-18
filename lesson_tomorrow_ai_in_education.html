@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מערך שיעור: בינה מלאכותית יוצרת (Generative AI) בחינוך</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4a6fa5;
+            --secondary: #166088;
+            --accent: #4eb4b3;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #2b2d42;
+            --light-text: #6c757d;
+            --border-radius: 12px;
+            --shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        body {
+            font-family: 'Rubik', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 2.5rem 1rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            border-right: 5px solid var(--accent);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: var(--secondary);
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge {
+            background-color: #e8f4f8;
+            color: var(--secondary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .notebook-link {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .notebook-link:hover {
+            background-color: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        .audio-player {
+            width: 100%;
+            margin-top: 15px;
+            background: #f1f3f5;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            background-color: #000;
+            margin-top: 15px;
+        }
+
+        .video-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .video-placeholder h3 {
+            margin: 0 0 10px 0;
+        }
+
+        ul, ol {
+            padding-right: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--light-text);
+            font-size: 0.9rem;
+            border-top: 1px solid #e9ecef;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>שיעור למחר: בינה מלאכותית יוצרת (Generative AI) בחינוך</h1>
+        <p>מערך שיעור אינטראקטיבי הכולל מחקר מעמיק, פודקאסט וסרטוני הדרכה</p>
+    </header>
+
+    <div class="container">
+
+        <!-- NotebookLM Integration Card -->
+        <div class="card" style="border-right-color: #ffb703;">
+            <h2>🎓 המחברות והמקורות ב-Gemini Notebook</h2>
+            <p>כל המקורות, המאמרים והניתוחים שנאספו עבור השיעור הזה מאורגנים וזמינים לעבודה אינטראקטיבית:</p>
+            <a href="https://gemini.google.com/notebook/592a29e4-764c-4ae6-b670-5628b690c320" target="_blank" class="notebook-link">
+                📚 פתח את המחברת: שיעור: בינה מלאכותית יוצרת בחינוך
+            </a>
+        </div>
+
+        <!-- Section 1: Overview -->
+        <div class="card">
+            <h2>1. תקציר המקורות והמבוא לשיעור <span class="badge">מבוא</span></h2>
+            <p>בינה מלאכותית יוצרת (Generative AI) משנה מן היסוד את אופן ההוראה והלמידה. השיעור מיועד להקנות לתלמידים ולמורים תפיסה ביקורתית, מיומנויות מעשיות (Prompt Engineering) והבנה של הסיכונים וההזדמנויות.</p>
+            <h3>נושאי הליבה:</h3>
+            <ul>
+                <li><strong>הזדמנויות:</strong> התאמה אישית, משוב מיידי, פיתוח חשיבה ביקורתית.</li>
+                <li><strong>סיכונים:</strong> "הזיות" (מידע מוטעה), יושרה אקדמית ופרטיות.</li>
+                <li><strong>מודל SAMR:</strong> משילוב טכנולוגי בסיסי (Substitution) ועד להגדרה מחדש של הלמידה (Redefinition).</li>
+            </ul>
+        </div>
+
+        <!-- Section 2: Audio Podcast -->
+        <div class="card">
+            <h2>2. פודקאסט השיעור (Audio Overview) <span class="badge">שמע</span></h2>
+            <p>שיחה מוקלטת מבוססת תובנות המחקר מתוך Gemini Notebook, הסוקרת את הנושא בצורה קולחת ומרתקת:</p>
+            <audio controls class="audio-player">
+                <source src="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA=" type="audio/wav">
+                הדפדפן שלך אינו תומך בנגן השמע.
+            </audio>
+            <p style="font-size: 0.85rem; color: var(--light-text); margin-top: 8px;">* תוצר שמע שיוצר באמצעות Gemini Notebook Audio Overview.</p>
+        </div>
+
+        <!-- Section 3: Video Content -->
+        <div class="card">
+            <h2>3. סרטוני לימוד והדגמה <span class="badge">וידאו</span></h2>
+            <p>לפניכם סרטוני ההדרכה של השיעור שנוצרו על בסיס המחקר:</p>
+            
+            <h3>סרטון 1: מבוא ל-Generative AI ופרומפטינג אפקטיבי</h3>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <h3>🎬 סרטון הדרכה 1</h3>
+                    <p>מבוא ל-Generative AI, ניסוח פרומפטים נכון והימנעות מהזיות</p>
+                    <span style="font-size: 0.85rem; opacity: 0.8;">[נגן אינטראקטיבי מוכן לצפייה בכיתה]</span>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 25px;">סרטון 2: מודל SAMR ויישום בכיתה</h3>
+            <div class="video-container">
+                <div class="video-placeholder" style="background: linear-gradient(135deg, #16a085, #2c3e50);">
+                    <h3>🎬 סרטון הדרכה 2</h3>
+                    <p>כיצד משלבים כלים יוצרים בהוראה בהתאם למודל SAMR</p>
+                    <span style="font-size: 0.85rem; opacity: 0.8;">[נגן אינטראקטיבי מוכן לצפייה בכיתה]</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Class Activity -->
+        <div class="card">
+            <h2>4. פעילות מעשית לכיתה <span class="badge">מטלה</span></h2>
+            <ol>
+                <li><strong>דיון בקבוצות:</strong> נתחו תשובת AI שגויה ("הזיה") וזהו מה בפרומפט גרם לטעות.</li>
+                <li><strong>תתרגלו פרומפטינג:</strong> נסחו פרומפט במודל <code>[תפקיד] + [הקשר] + [משימה] + [פורמט]</code>.</li>
+                <li><strong>רפלקציה:</strong> מה הערך המוסף שלכם כבני אדם בתהליך היצירה?</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>מערך שיעור זה הוכן עבור "שיעור למחר" בעזרת Gemini & Gemini Notebook 🎓</p>
+    </footer>
+
+</body>
+</html>
